@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ONG SaberMais — Educação e ensino de exatas: matemática, física e química.">
+  <title>ONG SaberMais — Início</title>
+<style>
+  :root{
+    --cor-primaria:#7C4DFF; /* lilás */
+    --cor-secundaria:#4CAF50; /* verde */
+    --cor-texto:#333;
+    --cor-bg:#fff;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:Arial, Helvetica, sans-serif;line-height:1.6;color:var(--cor-texto);background:var(--cor-bg)}
+  .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+  .skip-link:focus{left:1rem;top:1rem;width:auto;height:auto;background:#000;color:#fff;padding:.5rem 1rem;border-radius:.5rem}
+  header .topbar{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1rem 2rem;border-bottom:3px solid var(--cor-primaria)}
+  nav ul.menu{display:flex;gap:1rem;list-style:none;margin:0;padding:0}
+  nav a{padding:.5rem .75rem;border-radius:.5rem;text-decoration:none;color:var(--cor-texto)}
+  nav a:hover, nav a:focus{background:color-mix(in srgb, var(--cor-primaria) 15%, white);outline:2px solid transparent}
+  main{padding:2rem;max-width:1100px;margin:auto}
+  .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:2rem;align-items:center}
+  .hero img{width:100%;height:auto;border-radius:1rem;border:2px solid var(--cor-primaria)}
+  .cta{display:inline-block;margin-top:1rem;background:var(--cor-primaria);color:#fff;padding:.75rem 1rem;border-radius:.75rem;text-decoration:none}
+  .cta:hover,.cta:focus{filter:brightness(1.05)}
+  .grid{display:grid;gap:1.25rem;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+  .card{border:1px solid #ddd;border-radius:1rem;padding:1rem}
+  .card h3{margin-top:.5rem}
+  footer{margin-top:3rem;padding:2rem;background:#f8f8f8;border-top:3px solid var(--cor-secundaria)}
+  form{display:grid;gap:1rem;max-width:760px}
+  fieldset{border:2px solid #eee;border-radius:1rem;padding:1rem}
+  legend{padding:0 .5rem;font-weight:bold}
+  label{display:block;font-weight:600;margin-bottom:.25rem}
+  input, select, textarea{width:100%;padding:.75rem;border:1px solid #ccc;border-radius:.5rem}
+  input:focus, select:focus, textarea:focus{outline:3px solid color-mix(in srgb, var(--cor-primaria) 30%, white)}
+  .row{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+  .ajuda{font-size:.9rem;color:#555}
+  @media (max-width: 900px){ .hero{grid-template-columns:1fr} }
+</style>
+</head>
+<body>
+<header>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div class="topbar" role="banner">
+    <img src="imagens/logo.svg" alt="Logo ONG SaberMais" width="120" height="30">
+    <nav aria-label="Principal">
+      <ul class="menu">
+        <li><a href="index.html" aria-current="page">Início</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="conteudo">
+  <section class="hero" aria-labelledby="bemvindo">
+    <div>
+      <h1 id="bemvindo">SaberMais: Educação que transforma pelo ensino de exatas</h1>
+      <p>Promovemos oportunidades de aprendizado em <strong>Matemática, Física e Química</strong> para estudantes de comunidades, conectando voluntários, projetos e doações com transparência.</p>
+      <p><a class="cta" href="projetos.html">Conheça nossos projetos</a></p>
+    </div>
+    <img src="imagens/hero.svg" alt="Alunos estudando conteúdos de exatas com apoio de voluntários.">
+  </section>
+
+  <section aria-labelledby="impacto">
+    <h2 id="impacto">Nosso impacto</h2>
+    <div class="grid">
+      <article class="card" aria-labelledby="m1"><h3 id="m1">+500 alunos</h3><p>Atendidos em oficinas e mentorias de exatas.</p></article>
+      <article class="card" aria-labelledby="m2"><h3 id="m2">+120 voluntários</h3><p>Engajados em aulas, trilhas e correções.</p></article>
+      <article class="card" aria-labelledby="m3"><h3 id="m3">Transparência</h3><p>Relatórios abertos e prestação de contas periódica.</p></article>
+    </div>
+  </section>
+</main>
+<footer>
+  <section aria-labelledby="contatos">
+    <h2 id="contatos">Contato</h2>
+    <address>
+      Email: <a href="mailto:contato@sabermais.org">contato@sabermais.org</a><br>
+      WhatsApp: <a href="https://wa.me/5531999999999" rel="noopener">+55 (31) 99999-9999</a><br>
+      Belo Horizonte • MG
+    </address>
+  </section>
+  <p>&copy; <span id="ano"></span> ONG SaberMais — Educação e ensino de exatas.</p>
+  <script>
+    document.getElementById('ano').textContent = new Date().getFullYear();
+  </script>
+</footer>
+
+</body>
+</html>
