@@ -2,7 +2,7 @@
 
 Plataforma web desenvolvida como projeto acadêmico para apoiar iniciativas de educação em Matemática, Física e Química. A ONG SaberMais conecta voluntários, alunos e doadores para democratizar o acesso ao ensino de exatas.
 
-🔗 Acesse o projeto online (GitHub Pages): adicione aqui depois de publicar
+🔗 Acesse o projeto online (GitHub Pages): https://laribt.github.io/plataforma-ong-quimica/index.html 
 
 ✅ Objetivos do Projeto
 
