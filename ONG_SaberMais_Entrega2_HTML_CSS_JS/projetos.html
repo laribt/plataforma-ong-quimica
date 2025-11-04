@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Projetos sociais da ONG SaberMais — voluntariado e doações.">
+  <title>ONG SaberMais — Projetos</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="theme-color" content="#7C4DFF">
+</head>
+<body>
+<header>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div class="topbar" role="banner">
+    <div class="brand">
+      <img src="imagens/logo.svg" alt="Logo ONG SaberMais" width="120" height="30">
+    </div>
+    <button class="hamburger" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav aria-label="Principal" data-open="false">
+      <ul class="menu">
+        <li><a href="index.html" >Início</a></li>
+        <li>
+          <a href="projetos.html" aria-current="page" aria-haspopup="true" aria-expanded="false">Projetos</a>
+          <ul class="submenu" aria-label="Submenu Projetos">
+            <li><a href="projetos.html#lista-projetos">Em andamento</a></li>
+            <li><a href="projetos.html#como-participar">Como participar</a></li>
+          </ul>
+        </li>
+        <li><a href="cadastro.html" >Cadastro</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="conteudo">
+  <header>
+    <h1 style="font-size:var(--fs-700)">Projetos sociais</h1>
+    <p>Veja como participar como <strong>voluntário</strong> e como <strong>doar</strong> para ampliar nosso alcance.</p>
+  </header>
+
+  <img src="imagens/projetos.svg" alt="Ilustração de projetos em matemática, física e química." style="width:100%;height:auto;border-radius:1rem;border:2px solid var(--primary-600);margin:1rem 0;">
+
+  <section aria-labelledby="lista-projetos" id="lista-projetos">
+    <h2 id="lista-projetos" style="font-size:var(--fs-600)">Em andamento</h2>
+    <div class="grid auto-fit">
+      <article class="card">
+        <h3>Trilhas de Matemática</h3>
+        <p>Aulas semanais do básico ao ENEM, com monitorias e listas comentadas.</p>
+        <p><strong>Quando:</strong> Sábados • 9h–11h</p>
+        <span class="badge green">Educação</span>
+      </article>
+      <article class="card">
+        <h3>Laboratório de Química</h3>
+        <p>Experimentos seguros e contextualizados para turmas do ensino médio.</p>
+        <p><strong>Quando:</strong> Quartas • 14h–16h</p>
+        <span class="badge">Ciência</span>
+      </article>
+      <article class="card">
+        <h3>Física na Prática</h3>
+        <p>Oficinas com fenômenos e simulações acessíveis.</p>
+        <p><strong>Quando:</strong> Sextas • 15h–17h</p>
+        <span class="badge">Extensão</span>
+      </article>
+    </div>
+  </section>
+
+  <section class="row" aria-labelledby="como-participar" id="como-participar">
+    <h2 id="como-participar" style="font-size:var(--fs-600)">Como participar</h2>
+    <div>
+      <h3>Voluntariado</h3>
+      <p>Se você gosta de ensinar exatas, inscreva-se!</p>
+      <p><a class="btn" href="cadastro.html">Quero ser voluntário(a)</a></p>
+    </div>
+    <div>
+      <h3>Doações</h3>
+      <p>Contribua para materiais, transporte e lanches dos estudantes.</p>
+      <p><button class="btn secondary" disabled aria-disabled="true" title="Em breve">Doar (em breve)</button></p>
+    </div>
+  </section>
+</main>
+<footer>
+  <section aria-labelledby="contatos">
+    <h2 id="contatos">Contato</h2>
+    <address>
+      Email: <a href="mailto:contato@sabermais.org">contato@sabermais.org</a><br>
+      WhatsApp: <a href="https://wa.me/5531999999999" rel="noopener">+55 (31) 99999-9999</a><br>
+      Belo Horizonte • MG
+    </address>
+  </section>
+  <p>&copy; <span id="ano"></span> ONG SaberMais — Educação e ensino de exatas.</p>
+  <script src="js/main.js"></script>
+  <script>document.getElementById('ano').textContent = new Date().getFullYear();</script>
+</footer>
+</body>
+</html>
