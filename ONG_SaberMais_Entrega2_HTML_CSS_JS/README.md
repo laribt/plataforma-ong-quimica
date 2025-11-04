@@ -1,65 +1,31 @@
+🌱 ONG SaberMais – Plataforma Educacional
 
-# ONG SaberMais — Plataforma (Entregas I–IV)
+Plataforma web desenvolvida como projeto acadêmico para apoiar iniciativas de educação em Matemática, Física e Química. A ONG SaberMais conecta voluntários, alunos e doadores para democratizar o acesso ao ensino de exatas.
 
-Projeto acadêmico para uma ONG de educação em exatas (Matemática, Física e Química).
+🔗 Acesse o projeto online (GitHub Pages): adicione aqui depois de publicar
 
-## Estrutura de pastas
-```
-ong-sabemais/
-├── index.html
-├── projetos.html
-├── cadastro.html
-├── imagens/
-│   ├── logo.svg
-│   ├── hero.svg
-│   ├── projetos.svg
-│   └── cadastro.svg
-├── css/
-│   └── style.css
-└── js/
-    └── main.js
-```
+✅ Objetivos do Projeto
 
-## Entrega 1 (HTML5)
-- Páginas semânticas criadas, títulos hierárquicos e imagens por página.
-- Formulário com validação nativa (pattern, required, title).
-- Máscaras para CPF, telefone e CEP (JS progressivo).
+✔ Desenvolver uma plataforma completa utilizando HTML, CSS e JavaScript ✔ Aplicar conceitos modernos de Design System e responsividade ✔ Criar navegação dinâmica (SPA) e formulário interativo ✔ Garantir acessibilidade (WCAG) e boas práticas de código ✔ Publicar o projeto no GitHub Pages com versionamento profissional
 
-## Entrega 2 (CSS3)
-- **Design System** com 8+ cores, tipografia (5+ tamanhos) e escala de espaçamento.
-- **Grid 12 col** + utilitários responsivos com 5 breakpoints.
-- **Menu responsivo** (hambúrguer) e **submenu** (dropdown).
-- **Componentes**: cards, botões (hover/focus/disabled), alert/badges, formulários estilizados.
+🚀 Tecnologias Utilizadas
 
-## Como validar no W3C
-1. Abra https://validator.w3.org/nu/
-2. Use **Validate by File Upload** e envie `index.html`, `projetos.html` e `cadastro.html`.
-3. Corrija eventuais avisos (se houver) e salve.
+✔ Front-end HTML5 semântico, CSS3, JavaScript ✔ Layout & UI Flexbox, CSS Grid, Design System ✔ SPA & Lógica JavaScript (hash routing), templates HTML ✔ Acessibilidade Aria-labels, skip links, contraste, navegação por teclado ✔Deploy GitHub Pages ✔ Organização Commits semânticos e release tag
 
-## Como publicar no GitHub Pages
-1. Crie um repositório público `ong-sabemais`.
-2. Faça upload de todos os arquivos e pastas mostrados acima.
-3. Em **Settings > Pages**, selecione **Deploy from branch** (`main`, diretório `/root`).  
-4. Acesse: `https://SEU-USUARIO.github.io/ong-sabemais/`.
+🎨 Design System
 
-## Acessibilidade (WCAG 2.1 AA) — checklist rápido
-- [x] Estrutura semântica (header, nav, main, section, footer).
-- [x] **Skip link** para pular direto ao conteúdo.
-- [x] Foco visível em links/inputs/botões.
-- [x] Contraste adequado (texto principal ≥ 4.5:1).
-- [x] Navegação por teclado (menu e dropdown com foco).
-- [x] Textos alternativos em imagens informativas.
+Paleta: Lilás (primary) + Verde (accent) + Neutros Tipografia: Escala responsiva (clamp) Grid: 12 colunas + auto-fit responsivo Componentes: Botões, cards, alerts e badges
 
-## Próximos passos (Entrega 3 – JavaScript)
-- Modularizar funcionalidades em `js/` (ex.: `forms.js`, `spa.js`).
-- Implementar SPA simples (carregar seções via templates).
-- Feedback de validação inline.
-- Armazenar inscrições em `localStorage` (mock).
+♿ Acessibilidade
 
-## Próximos passos (Entrega 4 – Profissional)
-- **GitFlow**, commits semânticos e releases.
-- Modo **alto contraste** e **escuro acessível**.
-- Minificação de CSS/JS/HTML e compressão de imagens.
-- README com screenshots e passos de deploy.
+✔ Navegação por teclado ✔ aria-label, role, aria-current ✔ Skip link para pular navegação ✔ Tema Alto Contraste ✔ Tema Escuro (Dark Mode) ✔ Foco visível ✅
 
-— Atualizado em 2025-10-26
+✨ Funcionalidades
+
+✔ Requisito Implementação ✔ Formulário com máscaras CPF, CEP, telefone ✔ Validação avançada Feedback inline em tempo real ✔ Cadastro Simulado via localStorage ✔ SPA Navegação sem recarregar ✔ Responsividade Mobile-first ✔ Tema Acessível Claro, Escuro, Alto Contraste
+
+✉️ Contato
+
+📧 contato@sabermais.org
+
+💬 WhatsApp: (31) 99999-9999 📍 Belo Horizonte – MG
