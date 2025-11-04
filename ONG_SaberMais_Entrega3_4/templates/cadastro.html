@@ -1,0 +1,115 @@
+
+<header>
+  <h1 style="font-size:var(--fs-700)">Cadastro</h1>
+  <p>Preencha seus dados. Campos marcados com * são obrigatórios.</p>
+  <div class="alert info" role="status">Seus dados são usados apenas para contato e organização do voluntariado.</div>
+  <img src="imagens/cadastro.svg" alt="Ilustração de cadastro de voluntários." style="width:100%;height:auto;border-radius:1rem;border:2px solid var(--primary-600);margin:1rem 0;">
+</header>
+
+<form novalidate>
+  <fieldset>
+    <legend>Dados pessoais</legend>
+    <div class="row">
+      <div>
+        <label for="nome">Nome completo *</label>
+        <input type="text" id="nome" name="nome" autocomplete="name" required minlength="3" placeholder="Seu nome completo">
+      </div>
+      <div>
+        <label for="email">E-mail *</label>
+        <input type="email" id="email" name="email" autocomplete="email" required placeholder="voce@exemplo.com">
+      </div>
+    </div>
+    <div class="row">
+      <div>
+        <label for="cpf">CPF *</label>
+        <input type="text" id="cpf" name="cpf" inputmode="numeric" required
+               placeholder="000.000.000-00"
+               pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+               title="Formato: 000.000.000-00">
+      </div>
+      <div>
+        <label for="tel">Telefone *</label>
+        <input type="tel" id="tel" name="tel" inputmode="tel" required
+               placeholder="(00) 00000-0000"
+               pattern="\(\d{2}\) \d{5}-\d{4}"
+               title="Formato: (00) 00000-0000">
+      </div>
+    </div>
+    <div class="row">
+      <div>
+        <label for="nasc">Data de nascimento *</label>
+        <input type="date" id="nasc" name="nasc" required>
+      </div>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Endereço</legend>
+    <div class="row">
+      <div>
+        <label for="end">Endereço *</label>
+        <input type="text" id="end" name="end" autocomplete="address-line1" required placeholder="Rua, número, complemento">
+      </div>
+      <div>
+        <label for="cep">CEP *</label>
+        <input type="text" id="cep" name="cep" inputmode="numeric" required
+               placeholder="00000-000"
+               pattern="\d{5}-\d{3}"
+               title="Formato: 00000-000">
+      </div>
+    </div>
+    <div class="row">
+      <div>
+        <label for="cidade">Cidade *</label>
+        <input type="text" id="cidade" name="cidade" autocomplete="address-level2" required>
+      </div>
+      <div>
+        <label for="estado">Estado *</label>
+        <select id="estado" name="estado" autocomplete="address-level1" required>
+          <option value="" selected disabled>Selecione</option>
+          <option>AC</option><option>AL</option><option>AP</option><option>AM</option>
+          <option>BA</option><option>CE</option><option>DF</option><option>ES</option>
+          <option>GO</option><option>MA</option><option>MT</option><option>MS</option>
+          <option>MG</option><option>PA</option><option>PB</option><option>PR</option>
+          <option>PE</option><option>PI</option><option>RJ</option><option>RN</option>
+          <option>RS</option><option>RO</option><option>RR</option><option>SC</option>
+          <option>SP</option><option>SE</option><option>TO</option>
+        </select>
+      </div>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Interesse</legend>
+    <div class="row">
+      <div>
+        <label for="area">Área de interesse *</label>
+        <select id="area" name="area" required>
+          <option value="" selected disabled>Selecione</option>
+          <option>Matemática</option>
+          <option>Física</option>
+          <option>Química</option>
+          <option>Mentorias</option>
+          <option>Comunicação</option>
+        </select>
+      </div>
+      <div>
+        <label for="disp">Disponibilidade *</label>
+        <select id="disp" name="disp" required>
+          <option value="" selected disabled>Selecione</option>
+          <option>Manhã</option>
+          <option>Tarde</option>
+          <option>Noite</option>
+          <option>Fins de semana</option>
+        </select>
+      </div>
+    </div>
+    <div>
+      <label for="mensagem">Mensagem (opcional)</label>
+      <textarea id="mensagem" name="mensagem" rows="4" placeholder="Conte um pouco sobre você."></textarea>
+    </div>
+  </fieldset>
+
+  <button class="btn" type="submit">Enviar cadastro</button>
+  <p class="ajuda">As máscaras de CPF, telefone e CEP são aplicadas automaticamente ao digitar e a validação nativa do HTML5 confere o formato.</p>
+</form>
